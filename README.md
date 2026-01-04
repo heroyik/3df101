@@ -1,6 +1,6 @@
 # 👔 New Fashion Design Proposal for the AI Era (Vol. 1)
 
-Welcome to the **"New Fashion Design Proposal for the AI Era (Vol. 1)"** 3D fashion collection. This project showcases a high-fidelity, seasonal wardrobe designed for **Gen-X (male)**, optimized for seamless **WebAR** experiences.
+Welcome to the **"New Fashion Design Proposal for the AI Era (Vol. 1)"** 3D fashion collection. This project showcases a high-fidelity, seasonal wardrobe designed for **Gen-X (male) — 173cm / 65kg**, optimized for seamless **WebAR** experiences.
 
 ## ✨ Project Highlights
 - **Target Persona:** East Asian male (173cm, 65kg) with an athletic swimmer's physique and a clean-shaven, professional look.
