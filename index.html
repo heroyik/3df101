@@ -144,18 +144,22 @@
         background: var(--primary);
         color: white;
         border: none;
-        padding: 16px 32px;
-        font-size: 0.9rem;
+        padding: 12px 24px;
+        font-size: 0.8rem;
         font-weight: 600;
-        margin-top: 30px;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
-        gap: 12px;
-        transition: all 0.3s ease;
+        gap: 10px;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         text-transform: uppercase;
-        letter-spacing: 1px;
-        align-self: flex-start;
+        letter-spacing: 2px;
+        border-radius: 2px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        white-space: nowrap;
       }
 
       .ar-button:hover {
@@ -231,7 +235,7 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            Try on with AR
+            AR Fitting
           </button>
         </model-viewer>
         <div class="card-info">
@@ -279,7 +283,7 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            Try on with AR
+            AR Fitting
           </button>
         </model-viewer>
         <div class="card-info">
