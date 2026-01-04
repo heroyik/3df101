@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Modern Tech-Tailoring WebAR Collection</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+    <style>
+      :root {
+        --primary: #1a1a1a;
+        --secondary: #4a4a4a;
+        --accent: #d4af37;
+        --bg: #f8f9fa;
+      }
+      body {
+        font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        background: var(--bg);
+        color: var(--primary);
+        overflow-x: hidden;
+      }
+      header {
+        padding: 40px 20px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+      }
+      p.subtitle {
+        color: var(--secondary);
+        margin-top: 10px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 20px;
+      }
+      .card {
+        background: white;
+        border-radius: 24px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      model-viewer {
+        width: 100%;
+        height: 400px;
+        background-color: #f0f0f0;
+        border-radius: 16px;
+        --poster-color: transparent;
+      }
+      .card-info {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+      }
+      .season-tag {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 1px;
+      }
+      .clothing-title {
+        font-size: 1.25rem;
+        margin: 8px 0;
+        font-weight: 600;
+      }
+      .ar-button {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-weight: 600;
+        margin-top: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.2s;
+      }
+      .ar-button:hover {
+        background: #333;
+      }
+      footer {
+        text-align: center;
+        padding: 40px;
+        color: #999;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Modern Tech-Tailoring</h1>
+      <p class="subtitle">
+        2026 Season Collection for the Modern 50-year-old Man
+      </p>
+    </header>
+
+    <div class="container">
+      <!-- Spring Model -->
+      <div class="card">
+        <model-viewer
+          src="./res/spring.glb"
+          ios-src="./res/spring.usdz"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="./res/spring_poster.png"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          auto-rotate
+        >
+          <button slot="ar-button" class="ar-button">
+            <span>AR 시착하기</span>
+          </button>
+        </model-viewer>
+        <div class="card-info">
+          <span class="season-tag">Spring</span>
+          <div class="clothing-title">Modern Classic Grey Suit</div>
+        </div>
+      </div>
+
+      <!-- Summer Model -->
+      <div class="card">
+        <model-viewer
+          src="./res/summer.glb"
+          ios-src="./res/summer.usdz"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="./res/summer_poster.png"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          auto-rotate
+        >
+          <button slot="ar-button" class="ar-button">
+            <span>AR 시착하기</span>
+          </button>
+        </model-viewer>
+        <div class="card-info">
+          <span class="season-tag">Summer</span>
+          <div class="clothing-title">Tech-Polo & Navy Shorts</div>
+        </div>
+      </div>
+
+      <!-- Autumn Model -->
+      <div class="card">
+        <model-viewer
+          src="./res/autumn.glb"
+          ios-src="./res/autumn.usdz"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="./res/autumn_poster.png"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          auto-rotate
+        >
+          <button slot="ar-button" class="ar-button">
+            <span>AR 시착하기</span>
+          </button>
+        </model-viewer>
+        <div class="card-info">
+          <span class="season-tag">Autumn</span>
+          <div class="clothing-title">Technical Trench Coat</div>
+        </div>
+      </div>
+
+      <!-- Winter Model -->
+      <div class="card">
+        <model-viewer
+          src="./res/winter.glb"
+          ios-src="./res/winter.usdz"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="./res/winter_poster.png"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          auto-rotate
+        >
+          <button slot="ar-button" class="ar-button">
+            <span>AR 시착하기</span>
+          </button>
+        </model-viewer>
+        <div class="card-info">
+          <span class="season-tag">Winter</span>
+          <div class="clothing-title">Premium Wool Long Coat</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 AI Fashion Digital Transformation | Optimized for WebAR
+    </footer>
+  </body>
+</html>
