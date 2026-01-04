@@ -1,30 +1,37 @@
-# 👔 New Fashion Design Proposal for the AI Era (Vol. 1)
+# 👔 Tech-Tailoring Reimagined: 2026 Collection (Vol. 1)
 
-Welcome to the **"New Fashion Design Proposal for the AI Era (Vol. 1)"** 3D fashion collection. This project showcases a high-fidelity, seasonal wardrobe designed for **Gen-X (male) — 173cm / 65kg**, optimized for seamless **WebAR** experiences.
+Welcome to the **"Modern Tech-Tailoring"** 3D WebAR exhibition. This collection showcases a premium, seasonal wardrobe designed for the AI era, specifically tailored for **Gen-X (173cm / 65kg)**, blending high-end fashion aesthetics with cutting-edge mobile AR technology.
 
-## ✨ Project Highlights
-- **Target Persona:** East Asian male (173cm, 65kg) with an athletic swimmer's physique and a clean-shaven, professional look.
-- **Design Concept:** A fusion of timeless classic silhouettes and cutting-edge technical performance fabrics, tailored for the Gen-X generation.
-- **Platform Compatibility:** Dual-format export ensures a premium experience across Android (GLB) and iOS (USDZ).
+## ✨ 2026 Design Philosophy
+The recent redesign transforms the portal from a simple catalog into a high-fashion **Editorial Experience**:
+- **Editorial Layout:** A dynamic, asymmetrical grid system inspired by luxury fashion magazines.
+- **Minimalist Luxury:** A monochrome palette with gold (`#D4AF37`) accents for a sophisticated, premium feel.
+- **Glassmorphism UI:** Interactive cards using modern backdrop-filter effects for depth and elegance.
+- **Typography:** Integration of *Playfair Display* (Italy-inspired serif) and *Inter* for maximum visual impact and readability.
+- **Scroll Reveal:** Smooth, scroll-triggered animations (fade & slide) for an engaging user journey.
 
-## 🚀 Optimized 3D Assets (WebAR Ready)
-All models have been decimated by 50% (~11k polygons) and compressed with Draco to ensure ultra-fast loading (<2MB per file) on mobile devices via GitHub Pages.
+## 🚀 WebAR Ready Assets
+All 3D models are precision-engineered for mobile performance:
+- **Optimization:** ~11k polygons per model (50% decimation).
+- **Compression:** Draco-encoded GLB files for ultra-fast landing (<2MB).
+- **Dual Support:** Seamless AR experience on Android (WebXR) and iOS (USDZ Quick Look).
 
 | Season | Style | GLB (Android/Web) | USDZ (iOS Native) |
 | :--- | :--- | :--- | :--- |
-| **🌸 Spring** | Modern Grey Suit | [Download](./res/spring.glb) | [Download](./res/spring.usdz) |
-| **☀️ Summer** | Tech-Polo & Loafers | [Download](./res/summer.glb) | [Download](./res/summer.usdz) |
-| **🍂 Autumn** | Classic Trench Coat | [Download](./res/autumn.glb) | [Download](./res/autumn.usdz) |
-| **❄️ Winter** | Technical Wool Coat | [Download](./res/winter.glb) | [Download](./res/winter.usdz) |
+| **🌸 Spring** | Modern Classic Grey Suit | [View](./res/spring.glb) | [View](./res/spring.usdz) |
+| **☀️ Summer** | Tech-Polo & Navy Shorts | [View](./res/summer.glb) | [View](./res/summer.usdz) |
+| **🍂 Autumn** | Technical Trench Coat | [View](./res/autumn.glb) | [View](./res/autumn.usdz) |
+| **❄️ Winter** | Premium Wool Long Coat | [View](./res/winter.glb) | [View](./res/winter.usdz) |
 
-## 📱 WebAR 전시관
-The collection is live at:
-**👉 [https://heroyik.github.io/3df101/](https://heroyik.github.io/3df101/)**
+## 📱 Live Exhibition
+Experience the collection in your own space:
+**👉 [Visit the WebAR Gallery](https://heroyik.github.io/3df101/)**
 
-## 🛠 Tech Stack & Credits
-- **Platform:** Google Antigravity & Blender MCP (Zero-coding workflow)
-- **AI Modeling:** Hyper3D Rodin
-- **Creator:** nIck (Jan 4, 2026)
+## 🛠 Project Credits
+- **Design & Code:** Google Antigravity (Powered by Advanced Agentic AI)
+- **3D Modeling:** Hyper3D Rodin & Blender Integration
+- **Framework:** Vanilla CSS (Glassmorphism), IntersectionObserver API, `<model-viewer>`
+- **Author:** nIck (Updated Jan 5, 2026)
 
 ---
-*Created for the High-End Fashion AR Digital Transformation project.*
+*Curating the future of digital fashion transformation.*

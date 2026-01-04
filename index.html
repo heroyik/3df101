@@ -6,130 +6,218 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Modern Tech-Tailoring WebAR Collection</title>
+    <title>Modern Tech-Tailoring — 2026 Collection</title>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
     ></script>
     <style>
       :root {
-        --primary: #1a1a1a;
-        --secondary: #4a4a4a;
+        --primary: #0a0a0a;
+        --secondary: #666666;
         --accent: #d4af37;
-        --bg: #f8f9fa;
+        --bg: #ffffff;
+        --card-bg: rgba(255, 255, 255, 0.8);
+        --glass-border: rgba(255, 255, 255, 0.3);
       }
+
+      * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
       body {
-        font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: "Inter", -apple-system, sans-serif;
         margin: 0;
         background: var(--bg);
         color: var(--primary);
         overflow-x: hidden;
       }
-      header {
-        padding: 40px 20px;
-        text-align: center;
-        background: white;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      }
-      h1 {
-        margin: 0;
-        font-size: 2rem;
-        letter-spacing: -0.5px;
-        font-weight: 700;
-      }
-      p.subtitle {
-        color: var(--secondary);
-        margin-top: 10px;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 40px auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        padding: 0 20px;
-      }
-      .card {
-        background: white;
-        border-radius: 24px;
-        padding: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-        transition: transform 0.3s ease;
+
+      /* Hero Section */
+      .hero {
+        height: 80vh;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./res/hero_bg.png');
+        background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
       }
-      .card:hover {
-        transform: translateY(-5px);
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        margin: 0;
+        letter-spacing: -1px;
+        line-height: 1.1;
       }
+
+      .hero p {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-top: 20px;
+        font-weight: 300;
+        opacity: 0.9;
+      }
+
+      /* Grid Layout */
+      .main-content {
+        max-width: 1400px;
+        margin: -100px auto 100px;
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 40px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .card {
+        background: var(--card-bg);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 4px;
+        padding: 40px;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 40px 100px rgba(0,0,0,0.05);
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      .card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Editorial Placement */
+      .card-spring { grid-column: 1 / span 6; }
+      .card-summer { grid-column: 7 / span 6; margin-top: 100px; }
+      .card-autumn { grid-column: 1 / span 5; margin-top: -50px; }
+      .card-winter { grid-column: 6 / span 7; margin-top: 50px; }
+
       model-viewer {
         width: 100%;
-        height: 400px;
-        background-color: #f0f0f0;
-        border-radius: 16px;
+        height: 500px;
         --poster-color: transparent;
+        border-radius: 4px;
       }
+
       .card-info {
-        margin-top: 20px;
-        text-align: center;
-        width: 100%;
+        margin-top: 30px;
       }
+
       .season-tag {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-transform: uppercase;
-        font-weight: 700;
-        color: var(--accent);
-        letter-spacing: 1px;
-      }
-      .clothing-title {
-        font-size: 1.25rem;
-        margin: 8px 0;
         font-weight: 600;
+        color: var(--accent);
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 10px;
       }
+
+      .clothing-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.75rem;
+        margin: 0;
+        font-weight: 700;
+        font-style: italic;
+      }
+
       .ar-button {
         background: var(--primary);
         color: white;
         border: none;
-        padding: 12px 24px;
-        border-radius: 50px;
+        padding: 16px 32px;
+        font-size: 0.9rem;
         font-weight: 600;
-        margin-top: 15px;
+        margin-top: 30px;
         cursor: pointer;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 8px;
-        transition: background 0.2s;
+        gap: 12px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        align-self: flex-start;
       }
+
       .ar-button:hover {
-        background: #333;
+        background: var(--accent);
+        transform: scale(1.05);
       }
+
       footer {
         text-align: center;
-        padding: 40px;
-        color: #999;
-        font-size: 0.9rem;
+        padding: 100px 20px;
+        background: #f9f9f9;
+        color: var(--secondary);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
       }
-      @media (max-width: 768px) {
-        .container {
+
+      /* Mobile Adjustments */
+      @media (max-width: 900px) {
+        .main-content {
           grid-template-columns: 1fr;
+          padding: 0 20px;
+          margin-top: 40px;
+          gap: 60px;
+        }
+        .card-spring, .card-summer, .card-autumn, .card-winter {
+          grid-column: 1 / -1;
+          margin-top: 0 !important;
+          padding: 24px;
+        }
+        model-viewer {
+          height: 400px;
         }
         h1 {
-          font-size: 1.5rem;
+          font-size: 3rem;
         }
+      }
+
+      /* Custom AR Overlay */
+      #ar-instructions {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        pointer-events: none;
+        white-space: nowrap;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>New Fashion Design Proposal for the AI Era (Vol. 1)</h1>
-      <p class="subtitle">
-        2026 Season Collection for Gen-X (Male) — 173cm / 65kg
-      </p>
-    </header>
+    <section class="hero">
+      <p>Season Preview 2026</p>
+      <h1>Tech-Tailoring<br><i>Reimagined</i></h1>
+    </section>
 
-    <div class="container">
+    <main class="main-content">
       <!-- Spring Model -->
-      <div class="card">
+      <div class="card card-spring">
         <model-viewer
           src="./res/spring.glb"
           ios-src="./res/spring.usdz"
@@ -143,17 +231,17 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            <span>AR 시착하기</span>
+            Try on with AR
           </button>
         </model-viewer>
         <div class="card-info">
-          <span class="season-tag">Spring</span>
-          <div class="clothing-title">Modern Classic Grey Suit</div>
+          <span class="season-tag">Spring / Collection 01</span>
+          <h2 class="clothing-title">Modern Classic Grey Suit</h2>
         </div>
       </div>
 
       <!-- Summer Model -->
-      <div class="card">
+      <div class="card card-summer">
         <model-viewer
           src="./res/summer.glb"
           ios-src="./res/summer.usdz"
@@ -167,17 +255,17 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            <span>AR 시착하기</span>
+            Try on with AR
           </button>
         </model-viewer>
         <div class="card-info">
-          <span class="season-tag">Summer</span>
-          <div class="clothing-title">Tech-Polo & Navy Shorts</div>
+          <span class="season-tag">Summer / Collection 01</span>
+          <h2 class="clothing-title">Tech-Polo & Navy Shorts</h2>
         </div>
       </div>
 
       <!-- Autumn Model -->
-      <div class="card">
+      <div class="card card-autumn">
         <model-viewer
           src="./res/autumn.glb"
           ios-src="./res/autumn.usdz"
@@ -191,17 +279,17 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            <span>AR 시착하기</span>
+            Try on with AR
           </button>
         </model-viewer>
         <div class="card-info">
-          <span class="season-tag">Autumn</span>
-          <div class="clothing-title">Technical Trench Coat</div>
+          <span class="season-tag">Autumn / Collection 01</span>
+          <h2 class="clothing-title">Technical Trench Coat</h2>
         </div>
       </div>
 
       <!-- Winter Model -->
-      <div class="card">
+      <div class="card card-winter">
         <model-viewer
           src="./res/winter.glb"
           ios-src="./res/winter.usdz"
@@ -215,18 +303,38 @@
           auto-rotate
         >
           <button slot="ar-button" class="ar-button">
-            <span>AR 시착하기</span>
+            Try on with AR
           </button>
         </model-viewer>
         <div class="card-info">
-          <span class="season-tag">Winter</span>
-          <div class="clothing-title">Premium Wool Long Coat</div>
+          <span class="season-tag">Winter / Collection 01</span>
+          <h2 class="clothing-title">Premium Wool Long Coat</h2>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer>
-      Built on Jan 4, 2026, with Google Antigravity & Blender MCP (totally no-code!) — by nIck
+      <p>&copy; 2026 Modern Tech-Tailoring. All Rights Reserved.</p>
+      <p>Built with Google Antigravity & Blender Integration</p>
     </footer>
+
+    <script>
+      // Scroll Reveal Animation
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+      });
+    </script>
   </body>
 </html>
