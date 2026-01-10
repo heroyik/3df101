@@ -1,0 +1,37 @@
+# Optimized .gitignore for 3D Fashion project
+
+# OS and System Files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE and Tools
+.vscode/
+.idea/
+.antigravity/
+.gemini/
+
+# Logs and Temp
+*.log
+npm-debug.log*
+yarn-error.log*
+.cache/
+temp_renders/
+
+# Blender files
+*.blend
+*.blend1
+*.blend2
+
+# Dependencies
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Environment and Secrets
+.env
+*.pem
+*.key
+auth.json
