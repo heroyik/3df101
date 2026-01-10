@@ -1,37 +1,38 @@
-# 👔 Tech-Tailoring Reimagined: 2026 Collection (Vol. 1)
+# 👔 Tech-Tailoring Reimagined: Digital Editorial Edition (2026)
 
-Welcome to the **"Modern Tech-Tailoring"** 3D WebAR exhibition. This collection showcases a premium, seasonal wardrobe designed for the AI era, specifically tailored for **Gen-X (173cm / 65kg)**, blending high-end fashion aesthetics with cutting-edge mobile AR technology.
+Welcome to the **"Digital Editorial"** renewal of the Tech-Tailoring WebAR exhibition. This version transforms Moda's heritage into a content-first, high-fashion experience inspired by Moda Operandi's philosophy.
 
-## ✨ 2026 Design Philosophy
-The recent redesign transforms the portal from a simple catalog into a high-fashion **Editorial Experience**:
-- **Editorial Layout:** A dynamic, asymmetrical grid system inspired by luxury fashion magazines.
-- **Minimalist Luxury:** A monochrome palette with gold (`#D4AF37`) accents for a sophisticated, premium feel.
-- **Glassmorphism UI:** Interactive cards using modern backdrop-filter effects for depth and elegance.
-- **Typography:** Integration of *Playfair Display* (Italy-inspired serif) and *Inter* for maximum visual impact and readability.
-- **Scroll Reveal:** Smooth, scroll-triggered animations (fade & slide) for an engaging user journey.
+## ✨ Renewal Highlights
+The collection now features a state-of-the-art **Digital Editorial** interface:
+- **Digital Editorial Philosophy:** "Buy directly from the magazine." A seamless blend of high-fidelity 3D assets and storytelling.
+- **Asymmetric Grid System:** A dynamic, rhythmic layout that breaks the traditional e-commerce mold, focusing on visual hierarchy and white space.
+- **Trunkshow System (Pre-Order):** 
+    - **Deposit Logic:** Pay 50% now to reserve 2026 runway pieces.
+    - **Countdown UI:** Real-time urgency tracking for exclusive collection closings.
+- **Invisible UI:** A minimalist design system (`#000000` / `#FFFFFF`) that disappears, putting all focus on the beauty of the fashion.
+- **Size & Fit Guide:** integrated data mapping for luxury brand-to-US/UK size conversion.
 
-## 🚀 WebAR Ready Assets
-All 3D models are precision-engineered for mobile performance:
-- **Optimization:** ~11k polygons per model (50% decimation).
-- **Compression:** Draco-encoded GLB files for ultra-fast landing (<2MB).
-- **Dual Support:** Seamless AR experience on Android (WebXR) and iOS (USDZ Quick Look).
+## 🚀 Engineering Excellence
+- **High-Fidelity Rendering:** Optimized `<model-viewer>` configuration for 런웨이-grade texture and lighting.
+- **Skeletal Loading:** Premium-feel skeleton screens for a seamless high-res asset loading experience.
+- **Performance:** Native WebP/AVIF support and `loading="lazy"` strategies for high-performance image delivery.
+- **Responsive & Accessible:** Fully optimized for Mobile, Tablet, and Desktop with AR-ready accessibility.
 
 | Season | Style | GLB (Android/Web) | USDZ (iOS Native) |
 | :--- | :--- | :--- | :--- |
-| **🌸 Spring** | Modern Classic Grey Suit | [View](./res/spring.glb) | [View](./res/spring.usdz) |
-| **☀️ Summer** | Tech-Polo & Navy Shorts | [View](./res/summer.glb) | [View](./res/summer.usdz) |
-| **🍂 Autumn** | Technical Trench Coat | [View](./res/autumn.glb) | [View](./res/autumn.usdz) |
-| **❄️ Winter** | Premium Wool Long Coat | [View](./res/winter.glb) | [View](./res/winter.usdz) |
+| **🌸 Spring** | Modern Classic Grey Suit | [View](./res/spring_nick_high_quality.glb) | [View](./res/spring_nick_high_quality.usdz) |
+| **☀️ Summer** | Tech-Polo & Navy Shorts | [View](./res/summer_nick_high_quality.glb) | [View](./res/summer_nick_high_quality.usdz) |
+| **🍂 Autumn** | Technical Trench Coat | [View](./res/autumn_nick_high_quality.glb) | [View](./res/autumn_nick_high_quality.usdz) |
+| **❄️ Winter** | Premium Wool Long Coat | [View](./res/winter_nick_high_quality.glb) | [View](./res/winter_nick_high_quality.usdz) |
 
 ## 📱 Live Exhibition
-Experience the collection in your own space:
+Experience the future of fashion in your own space:
 **👉 [Visit the WebAR Gallery](https://heroyik.github.io/3df101/)**
 
 ## 🛠 Project Credits
-- **Design & Code:** Google Antigravity (Powered by Advanced Agentic AI)
-- **3D Modeling:** Hyper3D Rodin & Blender Integration
-- **Framework:** Vanilla CSS (Glassmorphism), IntersectionObserver API, `<model-viewer>`
-- **Author:** nIck (Updated Jan 5, 2026)
+- **Design & Engineering:** Google Antigravity (Powered by Advanced Agentic AI)
+- **Framework:** Vanilla CSS (Moda Design System), IntersectionObserver, `<model-viewer>` v3.3
+- **Author:** nIck (Updated Jan 10, 2026)
 
 ---
 *Curating the future of digital fashion transformation.*
