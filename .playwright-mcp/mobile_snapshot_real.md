@@ -1,0 +1,115 @@
+### Page state
+- Page URL: http://localhost:3000/
+- Page Title: Modern Tech-Tailoring — 2026 Collection
+- Page Snapshot:
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]: Moda Renewal
+      - generic [ref=e5]:
+        - generic [ref=e6]: Collections
+        - generic [ref=e7]: Trunkshow
+        - generic [ref=e8]: Editorial
+        - generic [ref=e9]: Bag (0)
+  - generic [ref=e11]:
+    - paragraph [ref=e12]: The Future of Fashion
+    - heading "Digital Editorial" [level=1] [ref=e13]:
+      - text: Digital
+      - text: Editorial
+    - generic [ref=e14]: Spring / Summer 2026 Preview
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - button "3D model" [ref=e21]
+            - generic:
+              - generic:
+                - generic:
+                  - img
+          - region "Live announcements":
+            - status
+        - generic [ref=e25]:
+          - generic [ref=e26]: Spring / Trunkshow Exclusive
+          - heading "Modern Classic Grey Suit" [level=2] [ref=e27]
+          - paragraph [ref=e28]: "Deposit: $1,250 (50% of $2,500) — Expected Delivery: March 2026"
+          - generic [ref=e29]: "Ends in: 41d 8h 53m"
+          - generic [ref=e30]:
+            - button "Pre-Order Now" [ref=e31] [cursor=pointer]
+            - button "Size Guide" [ref=e32] [cursor=pointer]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - button "3D model" [ref=e37]
+            - generic:
+              - generic:
+                - generic:
+                  - img
+          - region "Live announcements":
+            - status
+        - generic [ref=e41]:
+          - generic [ref=e42]: Summer / Trunkshow Exclusive
+          - heading "Tech-Polo & Navy Shorts" [level=2] [ref=e43]
+          - paragraph [ref=e44]: "Deposit: $450 (50% of $900) — Expected Delivery: June 2026"
+          - generic [ref=e45]: "Ends in: 116d 8h 53m"
+          - generic [ref=e46]:
+            - button "Pre-Order Now" [ref=e47] [cursor=pointer]
+            - button "Size Guide" [ref=e48] [cursor=pointer]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - button "3D model" [ref=e53]
+            - generic:
+              - generic:
+                - generic:
+                  - img
+          - region "Live announcements":
+            - status
+        - generic [ref=e57]:
+          - generic [ref=e58]: Autumn / Trunkshow Exclusive
+          - heading "Technical Trench Coat" [level=2] [ref=e59]
+          - paragraph [ref=e60]: "Deposit: $1,800 (50% of $3,600) — Expected Delivery: September 2026"
+          - generic [ref=e61]: "Ends in: 194d 8h 53m"
+          - generic [ref=e62]:
+            - button "Pre-Order Now" [ref=e63] [cursor=pointer]
+            - button "Size Guide" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - button "3D model" [ref=e69]
+            - generic:
+              - generic:
+                - generic:
+                  - img
+          - region "Live announcements":
+            - status
+        - generic [ref=e73]:
+          - generic [ref=e74]: Winter / Trunkshow Exclusive
+          - heading "Premium Wool Long Coat" [level=2] [ref=e75]
+          - paragraph [ref=e76]: "Deposit: $2,100 (50% of $4,200) — Expected Delivery: November 2026"
+          - generic [ref=e77]: "Ends in: 255d 8h 53m"
+          - generic [ref=e78]:
+            - button "Pre-Order Now" [ref=e79] [cursor=pointer]
+            - button "Size Guide" [ref=e80] [cursor=pointer]
+  - contentinfo [ref=e81]:
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - heading "Moda Renewal" [level=4] [ref=e84]
+        - paragraph [ref=e85]: Redefining the digital shopping experience through editorial excellence.
+      - generic [ref=e86]:
+        - heading "Support" [level=4] [ref=e87]
+        - list [ref=e88]:
+          - listitem [ref=e89]: Shipping & Returns
+          - listitem [ref=e90]: Size Guide
+          - listitem [ref=e91]: Contact Us
+      - generic [ref=e92]:
+        - heading "Legal" [level=4] [ref=e93]
+        - list [ref=e94]:
+          - listitem [ref=e95]: Privacy Policy
+          - listitem [ref=e96]: Terms of Service
+      - generic [ref=e97]:
+        - heading "Newsletter" [level=4] [ref=e98]
+        - textbox "Email Address" [ref=e99]
+    - generic [ref=e100]: © 2026 Moda Renewal. Crafted by Google Antigravity.
+```
